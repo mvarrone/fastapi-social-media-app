@@ -63,15 +63,10 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
     return user
 
 
-async def get_swagger_access(credentials: HTTPBasicCredentials = Depends(security)):
-    """Authenticate Swagger UI access using HTTP basic authentication"""
-
-    print(credentials.username, settings.swagger_username)
-    print(credentials.password, settings.swagger_password)
-
-    # Check both username and password are correct
+def get_swagger_access(credentials: HTTPBasicCredentials = Depends(security)):
     correct_username = secrets.compare_digest(
         credentials.username, settings.swagger_username)
+
     correct_password = secrets.compare_digest(
         credentials.password, settings.swagger_password)
 
