@@ -8,6 +8,12 @@ class Settings(BaseSettings):
     database_username: str
     database_password: str
 
+    testing_database_name: str
+    testing_database_hostname: str
+    testing_database_port: str
+    testing_database_username: str
+    testing_database_password: str
+
     app_version: str
 
     secret_key: str

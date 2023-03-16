@@ -6,7 +6,7 @@ from fastapi.security.oauth2 import OAuth2PasswordBearer
 from jose import JWTError, jwt
 from sqlalchemy.orm import Session
 
-from fastapi import Depends, HTTPException, status
+from fastapi import Depends, HTTPException, status, Request
 
 from . import database, models, schemas
 from .config import settings
@@ -63,7 +63,7 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
     return user
 
 
-def get_swagger_access(credentials: HTTPBasicCredentials = Depends(security)):
+def get_swagger_access(request: Request, credentials: HTTPBasicCredentials = Depends(security)):
     correct_username = secrets.compare_digest(
         credentials.username, settings.swagger_username)
 
@@ -71,6 +71,12 @@ def get_swagger_access(credentials: HTTPBasicCredentials = Depends(security)):
         credentials.password, settings.swagger_password)
 
     if not (correct_username and correct_password):
+        bad_credentials = {
+            "username": credentials.username,
+            "password": credentials.password,
+            "ip_address": request.client.host,
+            "port": request.client.port
+        }
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect credentials",
