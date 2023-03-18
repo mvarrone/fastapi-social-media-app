@@ -26,5 +26,5 @@ async def get_openapi_json_file(username: str = Depends(oauth2.get_swagger_acces
         title=main.app.title,
         description="📍Logged as " + username + " " + main.app.description,
         version=settings.app_version,
-        routes=main.app.routes
+        routes=main.app.routes,
     )
