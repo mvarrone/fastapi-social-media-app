@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   job1:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Pulling git repo
         uses: actions/checkout@v3
