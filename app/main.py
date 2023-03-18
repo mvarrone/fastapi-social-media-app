@@ -21,7 +21,8 @@ import sys
 app = FastAPI(
     title=title,
     description=description,
-    version=settings.app_version,
+    # version=settings.app_version,
+    version="1.0.0",
     docs_url=None,
     redoc_url=None,
     openapi_url=None
