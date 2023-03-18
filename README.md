@@ -10,7 +10,7 @@ Language: Python v3.11.1
 3. Testing: pytest v7.2.2
 4. Docker v20.10.23
 5. Alembic v1.10.2
-6. Postman: v10.12.4 Collections and environment variables provided in fastapi-social-media-app/postman
+6. Postman: v10.12.4 Collections and environment variables provided at [postman](https://github.com/mvarrone/fastapi-social-media-app/tree/main/postman)
 7. Database: PostgreSQL v15.2
 8. Models: SQLAlchemy v1.4.23
 9. Security:
