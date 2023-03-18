@@ -10,9 +10,11 @@ from app.database import Base, get_db
 from app.main import app
 from app.oauth2 import create_access_token
 
-SQLALCHEMY_TESTING_DATABASE_URL = f'postgresql://{settings.testing_database_username}:{settings.testing_database_password}@{settings.testing_database_hostname}:{settings.testing_database_port}/{settings.testing_database_name}'
+# SQLALCHEMY_TESTING_DATABASE_URL = f'postgresql://{settings.testing_database_username}:{settings.testing_database_password}@{settings.testing_database_hostname}:{settings.testing_database_port}/{settings.testing_database_name}'
+SQLALCHEMY_DATABASE_URL = f'postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}_test'
 
-engine = create_engine(SQLALCHEMY_TESTING_DATABASE_URL)
+# engine = create_engine(SQLALCHEMY_TESTING_DATABASE_URL)
+engine = create_engine(SQLALCHEMY_DATABASE_URL)
 TestingSessionLocal = sessionmaker(
     autocommit=False, autoflush=False, bind=engine)
 
