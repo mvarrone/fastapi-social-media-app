@@ -18,5 +18,23 @@ Language: Python v3.11.1
     - Hashed passwords in database using passlib
 10. CI/CD: GitHub Actions
 
+### Documentation
+
+It is available due to Swagger UI and Redocly
+
+1. Swagger UI:
+
+    ```linux
+    http://localhost:8000/docs
+    ```
+2. Redocly:
+
+    ```linux
+    http://localhost:8000/redoc
+    ```
+Note: Both cases require authentication:
+- Username: admin
+- Password: pass
+
 
 Note: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan

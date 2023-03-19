@@ -6,6 +6,7 @@ jobs:
   job1:
     environment:
       name: testing
+
     env:
       DATABASE_HOSTNAME: ${{secrets.DATABASE_HOSTNAME}}
       DATABASE_PORT: ${{secrets.DATABASE_PORT}}
@@ -31,6 +32,7 @@ jobs:
           --health-retries 5
 
     runs-on: ubuntu-latest
+    
     steps:
       - name: Pull Git repository
         uses: actions/checkout@v3
