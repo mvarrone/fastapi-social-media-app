@@ -19,9 +19,6 @@ Language: Python v3.11.1
 10. CI/CD: GitHub Actions
 
 ### Documentation
-
-It is available due to Swagger UI and Redocly
-
 1. Swagger UI:
 
     ```linux
@@ -32,7 +29,7 @@ It is available due to Swagger UI and Redocly
     ```linux
     http://localhost:8000/redoc
     ```
-Note: Both cases require authentication:
+Note: Both cases require authentication
 - Username: admin
 - Password: pass
 
