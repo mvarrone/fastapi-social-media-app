@@ -78,13 +78,13 @@ jobs:
       # - name: Image digest
       #   run: echo ${{ steps.docker_build.outputs.digest }}
       
-  deploy:
+  deploy-to-heroku:
     runs-on: ubuntu-latest
     needs: [build]
     environment:
       name: production
 
     steps:
-      - name: Deploying stuff
-        run: echo "Going to deploy some stuff"
+      - name: Deploying stuff to Heroku
+        run: echo "Going to deploy some stuff on Heroku"
       
