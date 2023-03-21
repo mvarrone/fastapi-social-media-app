@@ -30,7 +30,7 @@ Language: Python v3.11.1
     http://localhost:8000/redoc
     ```
 
-Note 1: I have added some security level to the documentation. For that, both cases require the following credentials to be usedx
+Note 1: I have added some security level to the documentation. For that, both cases require the following credentials to be used:
 - Username: admin
 - Password: pass
 
