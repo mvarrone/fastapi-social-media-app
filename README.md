@@ -57,49 +57,7 @@ Note 2: A ```.env``` file has been provided to facilitate the implementation and
 
 Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan
 
-### Isolation
-
-1. Create a virtual environment
-    ```linux
-    python -m venv venv
-    ```
-2. Activate it
-
-    On Windows using PowerShell
-    ```linux
-    .\venv\Scripts\Activate.ps1
-    ```
-3. Install dependencies
-    ```linux
-    pip install -r .\requirements.txt
-    ```
-4. Start API
-    ```linux
-    uvicorn app.main:app --host 0.0.0.0 --port 8000
-    ```
-    Use browser:
-
-    http://localhost:8000/
-
-    http://localhost:8000/docs
-5. Deactivate the virtual environment when no longer needed
-    ```linux
-    deactivate
-    ```
-### Next steps:
-
-    1) Implement a simple frontend using Jinja2 templates
-    2) Finish deploy to Digital Ocean
-    3) Postman:
-        - Create one example for each request
-        - Create Tests for each request (based on status code)
-        - Implement a Postman Flow
-        - Export collection data
-        - Export environment data
-    4) Implement roles: admin and user
-    5) Add documentation credentials to a db or json file (implement a hashed password)
-
-### Creating a virtual environment
+### Isolation: Creating a virtual environment
 <details>
 <summary>On Windows</summary>
 1.Creating a virtual environment
@@ -161,3 +119,16 @@ pip install -r requirements.txt
 deactivate
 ```
 </details>
+
+### Next improvements:
+
+    1) Implement a simple frontend using Jinja2 templates
+    2) Finish deploy to Digital Ocean
+    3) Postman:
+        - Create one example for each request
+        - Create Tests for each request (based on status code)
+        - Implement a Postman Flow
+        - Export collection data
+        - Export environment data
+    4) Implement roles: admin and user
+    5) Add documentation credentials to a db or json file (implement a hashed password)
