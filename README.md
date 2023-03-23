@@ -98,3 +98,44 @@ Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagar
         - Export environment data
     4) Implement roles: admin and user
     5) Add documentation credentials to a db or json file (implement a hashed password)
+
+<details>
+<summary>Windows commands</summary>
+
+```linux
+python -m venv venv
+```
+
+</details>
+
+<details>
+  <summary style="font-size: 16px; font-weight: bold; color: #007bff; cursor: pointer;">Windows commands</summary>
+
+  <div style="background-color: #f5f5f5; padding: 10px;">
+    ```linux
+    python -m venv venv
+    ```
+  </div>
+</details>
+
+<details>
+  <summary>Click to expand/collapse</summary>
+  <div class="collapsible-content">
+    Your content goes here.
+  </div>
+</details>
+
+<style>
+  details {
+    background-color: #f5f5f5; /* Change the background color of the collapsible section */
+    color: #333; /* Change the foreground color of the collapsible section */
+  }
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .collapsible-content {
+    padding: 10px;
+  }
+</style>
+
