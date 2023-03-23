@@ -101,9 +101,63 @@ Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagar
 
 ### Creating a virtual environment
 <details>
-<summary>On windows</summary>
+<summary>On Windows</summary>
+1.Creating a virtual environment
 
 ```md
 python -m venv venv
+```
+
+2.Activating it
+
+a) Using CMD
+
+```md
+.\venv\Scripts\activate.bat
+```
+
+b) Using PowerShell
+
+```md
+.\venv\Scripts\Activate.ps1
+```
+
+3.Installing dependencies
+
+```md
+pip install -r requirements.txt
+```
+
+4.Deactivating the virtual environment
+
+```md
+deactivate
+```
+</details>
+
+<details>
+<summary>On Linux/Mac</summary>
+1. Creating a virtual environment
+
+```md
+python3 -m venv venv
+```
+
+2.Activating it
+
+```md
+source myenv/bin/activate
+```
+
+3.Installing dependencies
+
+```md
+pip install -r requirements.txt
+```
+
+4.Deactivating the virtual environment
+
+```md
+deactivate
 ```
 </details>
