@@ -14,7 +14,7 @@ Language: Python v3.11.1
 ### Tech used
 1. Backend: FastAPI v0.92.0
 2. Fronted: Jinja2 templates will be implemented in order to build a frontend
-3. Testing: pytest v7.2.2
+3. Testing: pytest v7.2.2 (fixtures, parametrization and HTML/CSS report)
 4. Containerization: Docker v20.10.23
 5. Alembic: v1.10.2
 6. Postman: v10.12.4 Collections and environment variables provided at [postman](https://github.com/mvarrone/fastapi-social-media-app/tree/main/postman) folder on this repository
@@ -97,4 +97,4 @@ Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagar
         - Export collection data
         - Export environment data
     4) Implement roles: admin and user
-    5) Add documentation credentials to a db or json file (implement hash password)
+    5) Add documentation credentials to a db or json file (implement a hashed password)
