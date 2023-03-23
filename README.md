@@ -48,6 +48,8 @@ Note 1: I have added some security level to the documentation. For that, both ca
 - Username: admin
 - Password: pass
 
+Stored at the .env file
+
 Note 2: A ```.env``` file has been provided to facilitate the implementation and testing of this project. The reason to include this file is that it is a publicly available project on the Internet
 
 Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan
@@ -90,3 +92,4 @@ Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagar
         - Implement a Postman Flow
         - Export collection data
         - Export environment data
+    4) Implement roles: admin and user
