@@ -104,7 +104,7 @@ python3 -m venv venv
 2.Activating it
 
 ```md
-source myenv/bin/activate
+source venv/bin/activate
 ```
 
 3.Installing dependencies
