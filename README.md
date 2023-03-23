@@ -89,6 +89,7 @@ Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagar
     2) Finish deploy to Digital Ocean
     3) Postman:
         - Create one example for each request
+        - Create Tests for each request (based on status code)
         - Implement a Postman Flow
         - Export collection data
         - Export environment data
