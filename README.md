@@ -31,7 +31,7 @@ Language: Python v3.11.1
 
     - Deploy:
         - Deploy to a Ubuntu server on Digital Ocean
- 
+
 ### Documentation
 1. Swagger UI:
 
@@ -48,19 +48,9 @@ Note 1: I have added some security level to the documentation. For that, both ca
 - Username: admin
 - Password: pass
 
-Note 2: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan
+Note 2: A ```.env``` file has been provided to facilitate the implementation and testing of this project. The reason to include this file is that it is a publicly available project on the Internet
 
-Note 3: A ```.env``` file has been provided to facilitate the implementation and testing of this project. The reason to include this file is that it is a publicly available project on the Internet
-
-### Next steps:
-
-    1) Implement a simple frontend using Jinja2 templates
-    2) Finish deploy to Digital Ocean
-    3) Postman:
-        - Create one example for each request
-        - Implement a Postman Flow
-        - Export collection data
-        - Export environment data
+Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan
 
 ### Isolation
 
@@ -70,7 +60,7 @@ Note 3: A ```.env``` file has been provided to facilitate the implementation and
     ```
 2. Activate it
 
-    On Windows
+    On Windows using PowerShell
     ```linux
     .\venv\Scripts\Activate.ps1
     ```
@@ -80,9 +70,23 @@ Note 3: A ```.env``` file has been provided to facilitate the implementation and
     ```
 4. Start API
     ```linux
-    uvicorn app.main:app --reload
+    uvicorn app.main:app --host 0.0.0.0 --port 8000
     ```
-5. Deactivate the virtual environment
+    Use browser:
+
+    http://localhost:8000/
+
+    http://localhost:8000/docs
+5. Deactivate the virtual environment when no longer needed
     ```linux
     deactivate
     ```
+### Next steps:
+
+    1) Implement a simple frontend using Jinja2 templates
+    2) Finish deploy to Digital Ocean
+    3) Postman:
+        - Create one example for each request
+        - Implement a Postman Flow
+        - Export collection data
+        - Export environment data
