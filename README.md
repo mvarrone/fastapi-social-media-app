@@ -98,3 +98,43 @@ Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagar
         - Export environment data
     4) Implement roles: admin and user
     5) Add documentation credentials to a db or json file (implement a hashed password)
+
+<!-- Tabs -->
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Windows')">Windows</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Linux')">Linux</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Mac')">Mac</a></li>
+</ul>
+
+<!-- Content -->
+<div id="Windows" class="tabcontent">
+  <h3>Creating a Virtual Environment on Windows</h3>
+  <p>Instructions for creating a virtual environment on Windows...</p>
+</div>
+
+<div id="Linux" class="tabcontent">
+  <h3>Creating a Virtual Environment on Linux</h3>
+  <p>Instructions for creating a virtual environment on Linux...</p>
+</div>
+
+<div id="Mac" class="tabcontent">
+  <h3>Creating a Virtual Environment on Mac</h3>
+  <p>Instructions for creating a virtual environment on Mac...</p>
+</div>
+
+<!-- JavaScript to switch between tabs -->
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
