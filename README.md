@@ -36,12 +36,12 @@ Language: Python v3.11.1
         - Deploy to a Ubuntu server on Digital Ocean
 
 ### Documentation
-1. Swagger UI:
+1. Swagger UI
 
     ```linux
     http://localhost:8000/docs
     ```
-2. Redocly:
+2. Redocly
 
     ```linux
     http://localhost:8000/redoc
@@ -120,7 +120,7 @@ deactivate
 ```
 </details>
 
-### Next improvements:
+### Next improvements
 
     1) Implement a simple frontend using Jinja2 templates
     2) Finish deploy to Digital Ocean
