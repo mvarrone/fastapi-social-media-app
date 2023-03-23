@@ -1,10 +1,13 @@
 ## Social media app
 
-Backend app that allows to implement a CRUD simulating a social media app
+Backend that allows to implement a CRUD in order to create a social media app
 
 - It allows to create, delete and update a post
-- It can retrieve all of the available posts or just one by using an ID.
-- User creation feature was implemented
+- It retrieves all of the available posts or just one by using an ID
+- Of course, it is possible to create users
+- Schemas implemented to validate input and output data
+- Users cannot update nor delete posts that do not own
+- Users can vote posts: Add and delete votes to a post
 
 Language: Python v3.11.1
 
@@ -94,3 +97,4 @@ Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagar
         - Export collection data
         - Export environment data
     4) Implement roles: admin and user
+    5) Add documentation credentials to a db or json file (implement hash password)
