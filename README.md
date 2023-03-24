@@ -51,25 +51,33 @@ Language: Python v3.11.1
     http://localhost:8000/redoc
     ```
 
-Note 1: I have added some security level to the documentation. For that, both cases require the following credentials to be used:
+> Note 1: Credentials for documentation
+
+I have added some security level to the documentation. For that, both cases require the following credentials to be used:
 - Username: admin
 - Password: pass
 
-Stored at the .env file
+    Stored at the .env file
 
-Note 2: A ```.env``` file has been provided to facilitate the implementation and testing of this project. The reason to include this file is that it is a publicly available project on the Internet
+> Note 2: About .env file
 
-Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan
+A ```.env``` file has been provided to facilitate the implementation and testing of this project. The reason to include this file is that it is a publicly available project on the Internet
+
+> Note 3: About this project
+
+Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan
 
 ## Getting started
 
 a) Clone repository into your machine
+
 ```md
 git clone https://github.com/mvarrone/fastapi-social-media-app.git
 cd fastapi-social-media-app
 ```
 
 b) Create a virtual environment
+
 <details>
 <summary>On Windows</summary>
 1.Creating a virtual environment
