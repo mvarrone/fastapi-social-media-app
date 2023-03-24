@@ -1,19 +1,23 @@
-## Social media app
+# FastAPI Social Media App
 
-Backend that allows to implement a CRUD in order to create a social media app
+A social media web application built with FastAPI, PostgreSQL and *soon* Jinja2 Templates. This project is intended to demonstrate how to build a full-stack web application using modern web technologies.
+
+## Features
 
 - It allows to create, delete and update a post
 - It retrieves all of the available posts or just one by using an ID
-- Of course, it is possible to create users
+- User registration
 - Schemas implemented to validate input and output data
 - Users cannot update nor delete posts that do not own
 - Users can vote posts: Add and delete votes to a post
+- User authentication and authorization using JWT tokens.
 
 Language: Python v3.11.1
 
-### Tech used
-1. Backend: FastAPI v0.92.0
-2. Fronted: Jinja2 templates will be implemented in order to build a frontend
+## Tech stack
+
+1. Backend: FastAPI v0.92.0 FastAPI - Python web framework.
+2. Fronted: Jinja2 Templates will be implemented in order to build a frontend
 3. Testing: pytest v7.2.2 (fixtures, parametrization and HTML/CSS report)
 4. Containerization: Docker v20.10.23
 5. Alembic: v1.10.2
@@ -35,7 +39,7 @@ Language: Python v3.11.1
     - Deploy:
         - Deploy to a Ubuntu server on Digital Ocean
 
-### Documentation
+## Documentation
 1. Swagger UI
 
     ```linux
@@ -57,7 +61,15 @@ Note 2: A ```.env``` file has been provided to facilitate the implementation and
 
 Note 3: Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan
 
-### Isolation: Creating a virtual environment
+## Getting started
+
+a) Clone repository into your machine
+```md
+git clone https://github.com/mvarrone/fastapi-social-media-app.git
+cd fastapi-social-media-app
+```
+
+b) Create a virtual environment
 <details>
 <summary>On Windows</summary>
 1.Creating a virtual environment
@@ -86,7 +98,7 @@ b) Using PowerShell
 pip install -r requirements.txt
 ```
 
-4.Deactivating the virtual environment
+4.(OPTIONAL) Deactivating the virtual environment
 
 ```md
 deactivate
@@ -113,16 +125,22 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4.Deactivating the virtual environment
+4.(OPTIONAL) Deactivating the virtual environment
 
 ```md
 deactivate
 ```
 </details>
 
-### Next improvements
+c) Run app
 
-    1) Implement a simple frontend using Jinja2 templates
+```md
+uvicorn app.main:app --host 0.0.0.0 --port 8000 
+```
+
+## Next improvements
+
+    1) Implement a simple frontend using Jinja2 Templates
     2) Finish deploy to Digital Ocean
     3) Postman:
         - Create one example for each request
@@ -132,3 +150,10 @@ deactivate
         - Export environment data
     4) Implement roles: admin and user
     5) Add documentation credentials to a db or json file (implement a hashed password)
+
+## Contributing
+Contributions to this project are welcome. If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ file for details.
