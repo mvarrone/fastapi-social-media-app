@@ -67,7 +67,7 @@ A ```.env``` file has been provided to facilitate the implementation and testing
 
 Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan
 
-## Getting started
+## Getting started: Without Docker
 
 a) Clone repository into your machine
 
@@ -144,6 +144,24 @@ c) Run app
 
 ```md
 uvicorn app.main:app --host 0.0.0.0 --port 8000 
+```
+
+## Getting started: With Docker
+a) Clone repository
+
+```md
+git clone https://github.com/mvarrone/fastapi-social-media-app.git
+cd fastapi-social-media-app
+```
+
+b) Start
+```md
+docker compose -f .\docker-compose-dev.yml up -d
+```
+
+b) Stop
+```md
+docker compose -f .\docker-compose-dev.yml down
 ```
 
 ## Next improvements

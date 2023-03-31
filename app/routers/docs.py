@@ -12,12 +12,12 @@ router = APIRouter(
 
 @router.get("/docs", include_in_schema=False)
 async def get_swagger_documentation(username: str = Depends(oauth2.get_swagger_access)):
-    return get_swagger_ui_html(openapi_url="/openapi.json", title="Swagger UI")
+    return get_swagger_ui_html(openapi_url="/openapi.json", title="Docs - Swagger UI")
 
 
 @router.get("/redoc", include_in_schema=False)
 async def get_redoc_documentation(username: str = Depends(oauth2.get_swagger_access)):
-    return get_redoc_html(openapi_url="/openapi.json", title="ReDocly")
+    return get_redoc_html(openapi_url="/openapi.json", title="Docs - ReDocly")
 
 
 @router.get("/openapi.json", include_in_schema=False)
@@ -27,5 +27,5 @@ async def get_openapi_json_file(username: str = Depends(oauth2.get_swagger_acces
         description="📍Logged as " + username + " " + main.app.description,
         # version=settings.app_version,
         version="1.0.0",
-        routes=main.app.routes,
+        routes=main.app.routes
     )

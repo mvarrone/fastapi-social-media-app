@@ -77,6 +77,7 @@ def get_swagger_access(request: Request, credentials: HTTPBasicCredentials = Dep
             "ip_address": request.client.host,
             "port": request.client.port
         }
+        # print(bad_credentials)
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Incorrect credentials",
