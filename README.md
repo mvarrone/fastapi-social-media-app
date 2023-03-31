@@ -39,34 +39,6 @@ Language: Python v3.11.1
     - Deploy:
         - Deploy to a Ubuntu server on Digital Ocean
 
-## Documentation
-1. Swagger UI
-
-    ```linux
-    http://localhost:8000/docs
-    ```
-2. Redocly
-
-    ```linux
-    http://localhost:8000/redoc
-    ```
-
-> Note 1: Credentials for documentation
-
-I have added some security level to the documentation. For that, both cases require the following credentials to be used:
-- Username: admin
-- Password: pass
-
-    Stored at the .env file
-
-> Note 2: About .env file
-
-A ```.env``` file has been provided to facilitate the implementation and testing of this project. The reason to include this file is that it is a publicly available project on the Internet
-
-> Note 3: About this project
-
-Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan
-
 ## Getting started: Without Docker
 
 a) Clone repository into your machine
@@ -163,6 +135,34 @@ b) Stop
 ```md
 docker compose -f .\docker-compose-dev.yml down
 ```
+
+## Documentation
+1. Swagger UI
+
+    ```linux
+    http://localhost:8000/docs
+    ```
+2. Redocly
+
+    ```linux
+    http://localhost:8000/redoc
+    ```
+
+> Note 1: Credentials for documentation
+
+I have added some security level to the documentation. For that, both cases require the following credentials to be used:
+- Username: admin
+- Password: pass
+
+    Stored at the .env file
+
+> Note 2: About .env file
+
+A ```.env``` file has been provided to facilitate the implementation and testing of this project. The reason to include this file is that it is a publicly available project on the Internet
+
+> Note 3: About this project
+
+Project learnt from [fastapi-course](https://github.com/Sanjeev-Thiyagarajan/fastapi-course) by Sanjeev Thiyagarajan
 
 ## Next improvements
 
